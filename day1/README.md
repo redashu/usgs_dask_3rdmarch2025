@@ -89,3 +89,46 @@ ubuntu@daskserver2:~$
    14  history 
    15  pip install "dask[complete]"  # full Dask ecosystem
 ```
+
+### checking dask version 
+
+```
+(ashu-env) ubuntu@daskserver2:~$ python3
+Python 3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import dask
+>>> dask.__version__
+'2025.2.0'
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> exit;
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> exit()
+
+```
+
+### huge size 3d array is directly gonna load inTo memory 
+### which will lead to OOM (out of memory) error
+
+<img src="cal1.png">
+
+### Using dask to load large dataset 
+
+<img src="daskn1.png">
+
+### using dask to load high volume and velocity data
+
+<img src="daskn2.png">
+
+### Dask is using the spark concept like lazy evaluation and DAG to process 
+### large set of data 
+
+<img src="daskn3.png">
+
+### custom chunk size 
+
+<img src="daskn4.png">
+
