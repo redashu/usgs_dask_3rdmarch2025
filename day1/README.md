@@ -132,3 +132,7 @@ Use exit() or Ctrl-D (i.e. EOF) to exit
 
 <img src="daskn4.png">
 
+### setup of dask in given options 
+
+<img src="opt.png">
+
