@@ -47,3 +47,33 @@ Dask is a flexible, open-source library for parallel computing in Python. It is 
 - **Machine Learning**: Scale scikit-learn workflows with `dask_ml`.
 - **Custom Workflows**: Use `dask.delayed` to parallelize custom Python functions.
 - **Distributed Computing**: Run computations on clusters using Dask’s distributed scheduler.
+
+# Lab connect using SSH 
+
+### ssh 
+
+```sh
+ ssh  ubuntu@34.30.215.102
+The authenticity of host '34.30.215.102 (34.30.215.102)' can't be established.
+ED25519 key fingerprint is SHA256:RidE6RR6bC2KKRWUdCXYgmtRn2MavPwP8cJ9fCkhAhk.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '34.30.215.102' (ED25519) to the list of known hosts.
+ubuntu@34.30.215.102's password:
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 6.8.0-1021-gcp x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Mar  3 17:53:52 UTC 2025
+
+```
+### setup of dask in single machine 
+
+```
+ python3 -m venv  ashu-env 
+ubuntu@daskserver2:~$ ls
+ashu-env
+ubuntu@daskserver2:~$ 
+```
