@@ -77,3 +77,15 @@ ubuntu@daskserver2:~$ ls
 ashu-env
 ubuntu@daskserver2:~$ 
 ```
+
+### Installing dask basic and full both 
+
+```
+ 9  source  ashu-env/bin/activate
+   10  pip install numpy 
+   11  pip install pandas
+   12  history 
+   13  pip install dask  # basic dask version 
+   14  history 
+   15  pip install "dask[complete]"  # full Dask ecosystem
+```
