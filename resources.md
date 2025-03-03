@@ -2,3 +2,11 @@
 
 [click_here](https://pypi.org/project/dask/)
 
+### gitrepo for dataset
+
+[click_here](https://github.com/redashu/Datasets.git)
+
+### amazon s3 uri 
+
+[click_here](s3://delvex-software-center/USGS/large_dataset.csv)
+
