@@ -136,3 +136,7 @@ Use exit() or Ctrl-D (i.e. EOF) to exit
 
 <img src="opt.png">
 
+### dask cluster in kubernetes
+
+<img src="daskk.png">
+
