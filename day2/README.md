@@ -63,3 +63,36 @@ distributed               2025.2.0
 (client) ubuntu@dask-client:~$ 
 
 ```
+
+### Scheduler details 
+
+<img src="sch1.png">
+
+### starting scheduler 
+
+```
+ systemctl status dask-scheduler.service 
+○ dask-scheduler.service - Dask Scheduler
+     Loaded: loaded (/etc/systemd/system/dask-scheduler.service; disabled; preset: enabled)
+     Active: inactive (dead)
+(dask-env) ubuntu@dask-schedular:~$ sudo systemctl start dask-scheduler.service 
+(dask-env) ubuntu@dask-schedular:~$ systemctl status dask-scheduler.service 
+● dask-scheduler.service - Dask Scheduler
+     Loaded: loaded (/etc/systemd/system/dask-scheduler.service; disabled; preset: enabled)
+     Active: active (running) since Tue 2025-03-04 18:07:12 UTC; 3s ago
+   Main PID: 1049 (dask-scheduler)
+      Tasks: 3 (limit: 9507)
+     Memory: 86.0M (peak: 86.2M)
+        CPU: 1.070s
+     CGroup: /system.slice/dask-scheduler.service
+
+```
+
+### FRom client Node -- to connect Scheduler we gonna use 
+
+<img src="client11.png">
+
+### reading data from s3 for faster read method and lower latency in case of AWS based dask cluster 
+
+<img src="awsd.png">
+
