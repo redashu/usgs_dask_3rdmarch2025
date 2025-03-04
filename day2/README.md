@@ -96,3 +96,76 @@ distributed               2025.2.0
 
 <img src="awsd.png">
 
+### finding out cluster details and worker info 
+
+```
+ from dask.distributed import Client
+>>> client = Client("tcp://172.31.36.115:8786")
+>>> 
+>>> client.scheduler_info().keys()
+dict_keys(['type', 'id', 'address', 'services', 'started', 'workers'])
+>>> 
+>>> client.scheduler_info()['workers'].keys()
+dict_keys(['tcp://172.31.46.116:39567', 'tcp://172.31.46.3:42927'])
+>>> 
+
+```
+
+## scaling worker in dask cluster 
+
+<img src="scale11.png">
+
+### On new machine terminal 
+
+```
+sudo apt update
+sudo apt install python3-venv 
+python3 -m venv ashu-env 
+
+===>
+ubuntu@ip-172-31-39-84:~$  python3 -m venv ashu-env 
+ubuntu@ip-172-31-39-84:~$ ls
+ashu-env
+ubuntu@ip-172-31-39-84:~$ source ashu-env/bin/activate
+(ashu-env) ubuntu@ip-172-31-39-84:~$ 
+
+pip install numpy pandas dask distributed  s3fs 
+
+```
+
+## Creating start file of worker 
+
+### checking location of worker binary 
+
+```
+which dask-worker 
+/home/ubuntu/ashu-env/bin/dask-worker
+(ashu-env) ubuntu@ip-172-31-39-84:~$ 
+
+===>
+sudo systemctl daemon-reload 
+(ashu-env) ubuntu@ip-172-31-39-84:~$ sudo systemctl start dask-worker
+(ashu-env) ubuntu@ip-172-31-39-84:~$ sudo systemctl status  dask-worker
+```
+
+### dask-worker.service -- content 
+
+```
+[Unit]
+Description=Dask Scheduler
+After=network.target
+
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu
+ExecStart=/home/ubuntu/dask-env/bin/dask-worker tcp://172.31.36.115:8786
+Restart=always
+RestartSec=5
+
+
+[Install]
+WantedBy=multi-user.target
+```
+
+
