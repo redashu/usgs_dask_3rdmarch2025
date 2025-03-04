@@ -168,4 +168,28 @@ RestartSec=5
 WantedBy=multi-user.target
 ```
 
+## Introduction to Dask Bag 
 
+<img src="bag1.png">
+
+
+## Dask Bags - Explanation & Examples
+
+Dask Bags are designed for semi-structured or unstructured data, similar to Python lists or PySpark RDDs. They are ideal for processing JSON files, log files, or text data where each element is an independent record.
+
+### When to Use Dask Bags?
+- ✅ Processing large JSON, text, or CSV files where Pandas is inefficient.
+- ✅ Map-Reduce style operations (filtering, grouping, etc.) on large datasets.
+- ✅ Processing unstructured or nested data (e.g., web scraping, logs, XML).
+
+
+### checking method we can use in bag 
+
+```
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import dask.bag as db
+>>> dir(db)
+['Bag', 'Item', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', 'annotations', 'assert_eq', 'avro', 'chunk', 'compute', 'concat', 'core', 'from_delayed', 'from_sequence', 'from_url', 'map', 'map_partitions', 'range', 'read_avro', 'read_text', 'text', 'to_textfiles', 'utils', 'zip']
+>>> 
+
+```
