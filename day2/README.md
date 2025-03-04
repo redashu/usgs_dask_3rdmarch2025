@@ -12,3 +12,14 @@
 
 <img src="dask2.png">
 
+### aws cloud services 
+
+<img src="aws1.png">
+
+### Understanding Dask Cluster 
+
+<img src="daskcls1.png">
+
+### Dask Cluster Components 
+
+<img src="daskcls2.png">
