@@ -53,3 +53,18 @@ Created symlink /etc/systemd/system/multi-user.target.wants/dask-worker.service 
 
 <img src="dds1.png">
 
+### to improve performance of  large dataset in dask array and DF we use given concepts
+
+<img src="dds2.png">
+
+### partitions in dask bag for making performance improvement 
+
+<img src="dds3.png">
+
+### For better performance and calculations if you want to control partitions 
+
+<img src="dds4.png">
+
+### Map reduce operations in Bigdata 
+
+<img src="dds5.png">
