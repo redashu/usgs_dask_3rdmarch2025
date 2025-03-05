@@ -68,3 +68,33 @@ Created symlink /etc/systemd/system/multi-user.target.wants/dask-worker.service 
 ### Map reduce operations in Bigdata 
 
 <img src="dds5.png">
+
+### Introduction to Basic ML 
+
+<img src="ml1.png">
+
+
+### Basic Model creation flow 
+
+<img src="ml2.png">
+
+
+### out of many ML based python framework / libs DASk is supporting scikit-learn
+
+<img src="ml3.png">
+
+### Installing required Lib for ML support in dask in all the machines 
+### client , scheduler , workers
+
+```sh
+ pip install dask-ml 
+
+ ===>
+ (ashu-env) ubuntu@ip-172-31-39-84:~$ pip list | grep dask 
+dask             2025.2.0
+dask-glm         0.3.2
+dask-ml          2025.1.0
+(ashu-env) ubuntu@ip-172-31-39-84:~$ pip list | grep scikit-learn 
+scikit-learn     1.6.1
+(ashu-env) ubuntu@ip-172-31-39-84:~$ 
+```
