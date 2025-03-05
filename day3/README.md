@@ -98,3 +98,16 @@ dask-ml          2025.1.0
 scikit-learn     1.6.1
 (ashu-env) ubuntu@ip-172-31-39-84:~$ 
 ```
+
+### Use advertising data company dataset 
+
+<img src="ml4.png">
+
+### For model training purpose lets keep dataset split 
+
+<img src="ml5.png">
+
+### Understanding train_test_split 
+
+<img src="ml6.png">
+
