@@ -14,3 +14,9 @@
 
 [click_here](https://examples.dask.org/)
 
+### Dask Bag API docs 
+
+[click_here](https://docs.dask.org/en/latest/bag-api.html)
+
+
+
