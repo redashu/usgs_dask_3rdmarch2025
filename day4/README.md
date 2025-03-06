@@ -12,8 +12,8 @@ cluster = LocalCluster() # fully featured local dask cluster
 
 ### code mind of dask with various cluster options 
 
-<img src="rev2.png"
+<img src="rev2.png">
 
 ### Dask service with systemctl understanding 
 
-<img src="rev3.png"
+<img src="rev3.png">
