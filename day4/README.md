@@ -17,3 +17,10 @@ cluster = LocalCluster() # fully featured local dask cluster
 ### Dask service with systemctl understanding 
 
 <img src="rev3.png">
+
+## Performance optimization of Network / IO and DISk 
+
+### incase of reading data from external source like s3/gfs/HDFS 
+## generally intermediate opeartions are reading data multiple times 
+
+<img src="optm1.png">
