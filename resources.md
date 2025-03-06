@@ -19,4 +19,12 @@
 [click_here](https://docs.dask.org/en/latest/bag-api.html)
 
 
+### Official Dask docs
+
+[click_here](https://docs.dask.org/en/stable/)
+
+### For Bigdata block -- use thin in dask as well
+
+[click](https://slashbigdata.blogspot.com/)
+
 
